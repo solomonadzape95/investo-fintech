@@ -53,7 +53,7 @@ export default function Header() {
 
         <div className="md:hidden">
           <button
-            className="bg-yellow flex items-center cursor-pointer hover:bg-yellow/80 transition-colors duration-300 justify-center p-4 rounded-full"
+            className="bg-yellow flex items-center cursor-pointer hover:bg-[#d2f701de]/80 transition-colors duration-300 justify-center p-4 rounded-full "
             onClick={() => setIsMenuOpen(!isMenuOpen)}
           >
             <FaBarsStaggered className="font-extrabold" size={20} />
@@ -62,27 +62,27 @@ export default function Header() {
       </section>
 
       <nav
-        className={`md:hidden h-screen w-72 pt-12 bg-secondary fixed right-0 top-0 ${
+        className={`md:hidden h-screen w-full pt-12 bg-secondary fixed right-0 top-0 z-50 ease-in-out ${
           isMenuOpen ? "translate-x-0" : "translate-x-full"
-        } transition-transform duration-300`}
+        } transition-transform duration-500`}
       >
-        <div className="absolute top-4 right-4">
-          <button
-            className="bg-yellow flex items-center cursor-pointer hover:bg-yellow/80 transition-colors duration-300 justify-center p-4 rounded-full"
+        <div className="absolute top-11 left-4">
+            <button
+            className="bg-yellow flex items-center cursor-pointer hover:bg-[#d2f701de]/80 transition-colors duration-300 justify-center p-4 rounded-full ml-auto"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-          >
+            >
             <FaTimes size={20} />
-          </button>
+            </button>
         </div>
-        <ul className="flex items-start pt-14 flex-col">
+        <ul className="flex items-end pt-14 flex-col text-right">
           {navLinks.map((link, key) => (
             <li
               key={key}
-              className="w-full hover:bg-[#000000] transition-colors duration-300"
+              className="w-full hover:bg-[#343232] transition-colors duration-300 pr-10"
             >
               <Link
                 to={link.path}
-                className="text-white hover:text-yellow transition-colors p-4 pl-12 duration-300 w-full block"
+                className="text-white hover:text-[#d2f701de] transition-colors p-4 pl-12 duration-300 w-full block"
               >
                 {link.title}
               </Link>
