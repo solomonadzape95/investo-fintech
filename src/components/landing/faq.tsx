@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 
 const faqs = [
   {
-    head: "Can I use the business for business transactions?",
+    head: "Can I use the service for business transactions?",
     body: "Yes, our platform supports both personal and business transactions. Businesses can benefit from our secure and efficient transfer options tailored to their needs.",
   },
   {
