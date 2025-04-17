@@ -2,7 +2,7 @@ export default function CTA() {
   return (
     <section className="py-20 px-4 md:px-8 font-manrope bg-primary-100 h-96">
       <div className="max-w-7xl mx-auto -translate-y-2/3">
-        <div className="md:h-[543px] flex items-center justify-center p-8 md:p-12 rounded-3xl border border-[#282D45] relative overflow-hidden bg-[#171717]">
+        <div className="md:h-[543px] flex items-center justify-center py-14 px-8 md:p-12 rounded-3xl border border-[#282D45] relative overflow-hidden bg-[#171717]">
           <div className="absolute w-full h-full z-0 pointer-events-none bg-[url('/icons/rows.png')] bg-cover bg-no-repeat opacity-50" />
           {/* <div className="absolute top-10 left-10 w-[180px] h-[180px] bg-[#32CAFD70] rounded-full blur-[250px]" />
           <div className="absolute top-10 right-10 w-[180px] h-[180px] bg-[#7214FF70] rounded-full blur-[250px]" />
@@ -20,7 +20,7 @@ export default function CTA() {
             </p>
 
             <div className="flex flex-col md:flex-row gap-4 mx-auto justify-center">
-              <div className="flex items-center bg-white text-black rounded-full px-4 py-2 font-manrope">
+              <div className="flex items-center bg-white text-black rounded-full px-4 py-2 font-manrope justify-center">
                 <img src="/images/play.png" alt="google play" />
                 <div>
                   <p className="text-xs uppercase">Get it on</p>
@@ -28,7 +28,7 @@ export default function CTA() {
                 </div>
               </div>
 
-              <div className="flex items-center bg-white text-black rounded-full px-4 py-2 gap-4">
+              <div className="flex items-center bg-white text-black rounded-full px-4 py-2 gap-4 justify-center">
                 <img src="/images/apple.png" alt="google play" />
                 <div>
                   <p className="text-xs uppercase">Download on the</p>

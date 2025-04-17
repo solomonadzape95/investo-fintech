@@ -3,8 +3,8 @@ import { FaBullseye, FaStar } from "react-icons/fa6";
 // const stats = ["/images/stats1.png", ""];
 export default function Stats() {
   return (
-    <div className="w-full flex flex-col md:flex-row font-manrope justify-between gap-10 max-w-6xl mx-auto mt-24 mb-96">
-      <div className="flex gap-4 flex-col items-start w-sm">
+    <div className="w-full flex flex-col md:flex-row font-manrope justify-between gap-10 max-w-6xl mx-auto mt-24 mb-96 items-center">
+      <div className="flex gap-4 flex-col items-start w-xs md:w-sm mx-auto ">
         <div className="flex gap-3 items-center">
           <div className="flex">
             <img
@@ -31,7 +31,7 @@ export default function Stats() {
           </p>
         </div>
       </div>
-      <div className="flex gap-4 flex-col items-start w-sm">
+      <div className="flex gap-4 flex-col items-start  w-xs md:w-sm">
         <div className="flex gap-3 items-center">
           <div className="flex ">
             <FaStar className="text-[#FFA200CC] size-10" />
@@ -45,7 +45,7 @@ export default function Stats() {
           </p>
         </div>
       </div>
-      <div className="flex gap-4 flex-col items-start w-sm">
+      <div className="flex gap-4 flex-col items-start  w-xs md:w-sm">
         <div className="flex gap-3 items-center">
           <div className="flex ">
             <FaBullseye className="text-[#1AD05C] size-10" />
