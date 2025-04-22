@@ -82,9 +82,9 @@ export default function Footer() {
           <div>
             <h4 className="font-semibold mb-2">Products</h4>
             <ul className="space-y-1 text-sm">
-              <li>
-                <a href="#">AI Assistant</a>
-              </li>
+                  <li>
+                  <a href="/ai-assistant">AI Assistant</a>
+                  </li>
               <li>
                 <a href="#">Mobile App</a>
               </li>

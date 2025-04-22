@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { FaTimes } from "react-icons/fa";
+import { FaTimes, FaTimesCircle } from "react-icons/fa";
 import { FaBarsStaggered } from "react-icons/fa6";
 import { Link } from "react-router-dom";
 
@@ -68,21 +68,21 @@ export default function Header() {
       >
         <div className="absolute top-11 left-4">
             <button
-            className="bg-yellow flex items-center cursor-pointer hover:bg-[#d2f701de]/80 transition-colors duration-300 justify-center p-4 rounded-full ml-auto"
+            className=" flex items-center cursor-pointer  transition-colors duration-300 justify-center p-4 rounded-full ml-auto"
             onClick={() => setIsMenuOpen(!isMenuOpen)}
             >
-            <FaTimes size={20} />
+            <FaTimesCircle size={20} />
             </button>
         </div>
         <ul className="flex items-end pt-14 flex-col text-right">
           {navLinks.map((link, key) => (
             <li
               key={key}
-              className="w-full hover:bg-[#343232] transition-colors duration-300 pr-10"
+              className="w-full  transition-colors duration-300 pr-10"
             >
               <Link
                 to={link.path}
-                className="text-white hover:text-[#d2f701de] transition-colors p-4 pl-12 duration-300 w-full block"
+                className="text-white  transition-colors p-4 pl-12 duration-300 w-full block"
               >
                 {link.title}
               </Link>
